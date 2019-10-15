@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<link rel="stylesheet" href="assets\vendor\bootstrap 4.3.1\css\bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style-main.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="assets/vendor/mscrollbar/jquery.mCustomScrollbar.min.css">
+<!-- Font Awesome CSS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+<!-- Chart JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+<!-- JQVectorMap -->
+<link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.3.css">
+
+<style>
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #585858;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.685);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+
+.scroller {
+  overflow-y: scroll;
+  scrollbar-color: #0A4C95 #C2D2E4;
+}
+</style>
+<!-- Jquery -->
+<script src="assets\vendor\jquery\jquery-2.2.4.js"></script>
+<!-- JVectorMap  -->
+<script src="assets\vendor\jvectormap\jquery-jvectormap-2.0.3.min.js"></script>
+<script src="assets\vendor\jvectormap\jquery-jvectormap-map.js"></script>
+<script src="assets\vendor\jvectormap\jquery-jvectormap-world-mill-en.js"></script>
+<body>
+
+<div class="wrapper">
+	
+	<nav id="sidebar" class="mCustomScrollbar">
+		<div class="sidebar-header">
+			<img src="assets/image/data/sidelogo.png" alt="">
+		</div>
+
+		<ul class="list-unstyled components">
+			<p>Dummy Heading</p>
+
+			<li class="active mt-2">
+				<a class="" href="index.html"><i class="fas fa-home fa-snav"></i>Dashboard</a>
+			</li>
+
+			<!-- <li class="mt-2">
+				<a href="#artikelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-edit fa-snav"></i><span>Artikel</span></a>
+
+				<ul class="collapse list-unstyled" id="artikelSubmenu">
+					<li>
+						<a href="">Tulis Artikel</a>
+					</li>
+					<li>
+						<a href="">Daftar Artikel</a>
+					</li>
+					<li>
+						<a href="">Kategori Artikel</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#produkSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-shopping-cart fa-snav"></i> Produk</a>
+
+				<ul class="collapse list-unstyled" id="produkSubmenu">
+					<li>
+						<a href="">Tambah Produk</a>
+					</li>
+					<li>
+						<a href="">Daftar Produk</a>
+					</li>
+					<li>
+						<a href="">Kategori Produk</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-cart-arrow-down fa-snav"></i>Discount</a>
+			</li>
+			
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-user-tag fa-snav"></i>Customer</a>
+			</li>
+
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-clipboard fa-snav"></i>Report</a>
+			</li>
+
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-cog fa-snav"></i>Setting</a>
+			</li> -->
+
+		</ul>
+
+		<ul class="list-unstyled components">
+			<li class="mt-2">
+				<a href="#components-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cogs fa-snav"></i> Components</a>
+
+				<ul class="collapse list-unstyled" id="components-admin">
+					<li>
+						<a href="button.html">Button</a>
+					</li>
+					<li>
+						<a href="badge.html">Badge</a>
+					</li>
+					<li>
+						<a href="">Panel custom</a>
+					</li>
+					<li>
+						<a href="icon.html">Icon</a>
+					</li>
+					<li>
+						<a href="">Notification</a>
+					</li>
+					<li>
+						<a href="">Pagination Button</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#table-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-table fa-snav"></i> Table</a>
+
+				<ul class="collapse list-unstyled" id="table-admin">
+					<li>
+						<a href="table.html">Regular Table</a>
+					</li>
+					<li>
+						<a href="">Datatable</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#map-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-map fa-snav"></i> Table</a>
+
+				<ul class="collapse list-unstyled" id="map-admin">
+					<li>
+						<a href="">JVector Maps</a>
+					</li>
+					<li>
+						<a href="">Google Maps</a>
+					</li>
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+
+
+<!-- Content -->
+
+
+<div id="content" class="w-100 p-2">
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+
+			<button type="button" id="sidebarCollapse" class="btn btn-info">
+				<i class="fas fa-align-left"></i>
+				<span>Toogle Sidebar</span>
+			</button>
+			
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<div class="row justify-content-center">
+		
+			<dv class="col-12 col-sm-6 col-xl-3">
+				<div class="card mt-2 rounded-top">
+				  <div class="card-body bg-lightblue-gradient">
+				  	<div class="row">
+				  		<div class="col text-white">
+						    <h5 class="card-title text-uppercase mb-0">Artikel</h5>
+						    <span>156</span>
+						</div>
+						<div class="col-auto">
+					    	<i class="fas fa-edit mr-3 text-white text-center"></i>
+						</div>
+					</div> 
+				    <a href="#" class="btn btn-default bg-pink rounded-0 mt-2">Daftar Artikel</a>
+				  </div>
+				</div>
+			</dv>
+			
+			<div class="col-12 col-sm-6 col-xl-3">
+				<div class="card mt-2 rounded-top">
+				  <div class="card-body bg-lightblue-gradient">
+				  	<div class="row">
+				  		<div class="col text-white">
+						    <h5 class="card-title text-uppercase mb-0">Produk</h5>
+						    <span>56</span>
+						</div>
+						<div class="col-auto">
+					    	<i class="fas fa-shopping-cart mr-3 text-white text-center"></i>
+						</div>
+					</div>
+					<a href="#" class="btn btn-default bg-pink rounded-0 mt-2">Daftar Produk</a> 
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-12 col-sm-6 col-xl-3">
+				<div class="card mt-2 rounded-top">
+				  <div class="card-body bg-lightblue-gradient">
+				  	<div class="row">
+				  		<div class="col text-white">
+						    <h5 class="card-title text-uppercase mb-0">Invoice</h5>
+						    <span>25</span>
+						</div>
+						<div class="col-auto">
+					    	<i class="fas fa-money-check-alt mr-3 text-white"></i>
+						</div>
+					</div>			  	
+				    <a href="#" class="btn btn-default bg-pink rounded-0 mt-2">Daftar Invoice</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-6 col-xl-3">
+				<div class="card mt-2 rounded-top">
+				  <div class="card-body bg-lightblue-gradient">
+				  	<div class="row">
+				  		<div class="col text-white">
+						    <h5 class="card-title text-uppercase mb-0">Pesan</h5>
+						    <span>30</span>
+						</div>
+						<div class="col-auto">
+					    	<i class="fas fa-envelope mr-3 text-white"></i>
+						</div>
+					</div>			  	
+				    <a href="#" class="btn btn-default bg-pink rounded-0 mt-2">Periksa</a>
+				  </div>
+				</div>
+			</div>	
+
+		</div>
+	</div>
+
+
+<!-- ----------- -->
+<!-- Member List -->
+	<div class="container-fluid">
+		<div class="d-flex justify-content-center">
+			<div class="card card-shadow w-100 bg-grey border-0">	
+
+				<div class="card-header bg-red-gradient text-white position-relative p-3 rounded-top ">
+						<h5 class="mb-1">Our Team</h5>
+						<p class="mb-1 text-white">List Our Team member.</p>
+				</div>
+
+				<div class="card-body">
+
+						<div class="row">
+							
+							<div class="col-md-6 col-xl-4">
+								<div class="card card-content border-0">
+									<div class="card-body">
+										<div class="d-lg-flex flex-row text-center">
+											<img src="assets/image/profile/face9.jpg" alt="" class="rounded" style="background-size: cover;">
+											<div class="ml-lg-3">
+												<h6>Thomas Edison</h6>
+												<p class="text-muted mb-0">thomas@gmail.com</p>
+												<p class="text-success font-weight-bold mb-1">Content Writer</p>
+												<i class="fab fa-dribbble-square h3"></i>
+												<i class="fab fa-twitter-square h3"></i>
+												<i class="fab fa-linkedin h3"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-xl-4">
+								<div class="card card-content border-0">
+									<div class="card-body">
+										<div class="d-lg-flex flex-row text-center">
+											<img src="assets/image/profile/face11.jpg" alt="" class="rounded">
+											<div class="ml-lg-3">
+												<h6>Erika Nouchea</h6>
+												<p class="text-muted mb-0">erickanouche@gmail.com</p>
+												<p class="text-success font-weight-bold mb-1">Product Management</p>
+												<i class="fab fa-dribbble-square h3"></i>
+												<i class="fab fa-twitter-square h3"></i>
+												<i class="fab fa-linkedin h3"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-xl-4">
+								<div class="card card-content border-0">
+									<div class="card-body">
+										<div class="d-lg-flex flex-row text-center">
+											<img src="assets/image/profile/face12.jpg" alt="" class="rounded">
+											<div class="ml-lg-3">
+												<h6>David Mon</h6>
+												<p class="text-muted mb-0 ">davidmon@gmail.com</p>
+												<p class="text-success font-weight-bold mb-1">Product Management</p>
+												<i class="fab fa-dribbble-square h3"></i>
+												<i class="fab fa-twitter-square h3"></i>
+												<i class="fab fa-linkedin h3"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="row justify-content-center">
+								<nav aria-label="Page navigation example">
+								  <ul class="pagination">
+								    <li class="page-item">
+								      <a class="page-link" href="#" aria-label="Previous">
+								        <span aria-hidden="true">&laquo;</span>
+								      </a>
+								    </li>
+								    <li class="page-item"><a class="page-link" href="#">1</a></li>
+								    <li class="page-item"><a class="page-link" href="#">2</a></li>
+								    <li class="page-item"><a class="page-link" href="#">3</a></li>
+								    <li class="page-item">
+								      <a class="page-link" href="#" aria-label="Next">
+								        <span aria-hidden="true">&raquo;</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- ----------- -->
+<!-- Widget Data -->
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="col-12 col-lg-6">
+				<div class="card card-shadow w-100 bg-grey border-0 bg-0">		
+
+					<div class="card-header bg-green-gradient text-white position-relative p-3 rounded-top ">
+						<h5>Chart Data</h5>
+					</div>
+
+					<div class="card-body">
+
+
+						<div class="row">
+							<div class="col">
+								<canvas id="myChart"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-12 col-lg-6">
+				<div class="card card-shadow w-100 bg-grey border-0 bg-0">
+
+					<div class="card-header bg-lightblue-gradient text-white position-relative p-3 rounded-top">
+						<h5>Chart Data Line</h5>
+					</div>
+
+					<div class="card-body">
+						<div class="row">
+							<div class="col">
+								<canvas id="myChart2"></canvas>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="card card-shadow w-100 bg-grey border-0 bg-0">
+
+					<div class="card-header bg-dark-royale text-white position-relative p-3 rounded-top">
+						<h5>Jquery Map Vector</h5>
+					</div>
+
+					<div class="card-body">
+						<div class="row">
+							<div class="col">
+								<div id="map-vector" style="height: 350px;"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			 </div> <!--col -->
+
+			<div class="col-12 col-md-6">
+				<div class="card card-shadow w-100 bg-grey border-0 bg-0">
+					<div class="card-header bg-stellar text-white position-relative p-3 rounded-top ">
+						<h5>Profile Data</h5>
+					</div>
+
+					<div class="card-body">
+						<div class="row">
+							<div class="col">
+									<div class="bg-profile-image">
+										<img src="assets/image/data/background.jpg" alt="">
+									</div>
+									<div class="content-profile">
+										<img src="assets/image/profile/admin.jpeg" class="rounded" alt="">
+										<div class="title">
+											<h4>John Conour</h4>
+											<a class="text-muted">conordevs@gmail.com</a><br>
+											<a class="text-muted">www.condro-design.com</a>
+										</div>
+										<p class="description text-center">
+											"Just Like Me, Design are intuitive"
+										</p>
+										<hr>
+
+										<div class="text-center mb-1">
+											<div class="row">
+												<div class="col-12 col-xl-3 offset-xl-1 mb-3">
+													<h5>Jobs</h5>
+													<span class="text-muted">24</span>
+												</div>
+												<div class="col-12 col-xl-3 mb-3">
+													<h5>Posititon</h5>
+													<span class="text-muted">Devs Ops</span>
+												</div>
+												<div class="col-12 col-xl-4 mb-3">
+													<h5>Division</h5>
+													<span class="text-muted">Analitical AI</span>
+												</div>
+											</div>
+										</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- ----------------- -->
+<!-- History Data -->
+
+	<div class="container-fluid">
+		
+			<div class="d-flex justify-content-center">
+				<div class="card card-shadow w-100">						
+					
+					<div class="card-header bg-green-gradient text-white position-relative p-3 rounded-top ">
+						<h5 class="mb-1">Good Afternoon Mr.J Smith</h5>
+						<p class="mb-1 text-white">Here Whats Happening in your store before you login.</p>
+					</div>
+
+					<div class="card-body">
+						<div class="row m-3">
+							<div class="col">
+								<h5>Sales</h5>
+								<p>$45.00</p>
+							</div>
+							<div class="col">
+								<h5>Latest Visitor</h5>
+								<p>2</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="alert alert-info border-0 rounded-0" role="alert">
+								  <i class="fas fa-exclamation-circle mr-2"></i>No Complain From Any Buyer, you`re management store are fine.
+								</div>
+								<div class="alert alert-danger border-0 rounded-0" role="alert">
+								  <i class="fas fa-exclamation-circle mr-2"></i>A Customer Reporting His Package has not been received!.
+								</div>
+								<div class="alert alert-warning border-0 rounded-0" role="alert">
+								  <i class="fas fa-exclamation-circle mr-2"></i>Your Email has not been verification!.
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+	</div> <!-- container-fluid p3 -->
+
+
+
+
+</div>
+
+
+</div> <!-- content clos -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Chartjs 2.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
+<script src="assets/js/script-main.js"></script>
+</body>
+</html>

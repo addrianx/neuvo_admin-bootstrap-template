@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+   <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<title>Nevo Admin | Button</title>
+</head>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Common CSS -->
+<link rel="stylesheet" href="assets/css/style-main.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<!-- Chart JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+<!-- JQVectorMap -->
+<link rel="stylesheet" href="assets\jvectormap\jquery-jvectormap-2.0.3.css">
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<!-- JVectorMap  -->
+<script src="assets\jvectormap\jquery-jvectormap-2.0.3.min.js"></script>
+<script src="assets\jvectormap\jquery-jvectormap-map.js"></script>
+<script src="assets\jvectormap\jquery-jvectormap-world-mill-en.js"></script>
+<body>
+
+<!-- Sidebar -->
+<div class="wrapper">
+	
+      <nav id="sidebar" class="mCustomScrollbar">
+         <div class="sidebar-header">
+            <img src="assets/image/data/sidelogo.png" alt="">
+         </div>
+   
+         <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+   
+            <li class="active mt-2">
+               <a class="" href="index.html"><i class="fas fa-home fa-snav"></i>Dashboard</a>
+            </li>
+   
+            <!-- <li class="mt-2">
+               <a href="#artikelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-edit fa-snav"></i><span>Artikel</span></a>
+   
+               <ul class="collapse list-unstyled" id="artikelSubmenu">
+                  <li>
+                     <a href="">Tulis Artikel</a>
+                  </li>
+                  <li>
+                     <a href="">Daftar Artikel</a>
+                  </li>
+                  <li>
+                     <a href="">Kategori Artikel</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#produkSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-shopping-cart fa-snav"></i> Produk</a>
+   
+               <ul class="collapse list-unstyled" id="produkSubmenu">
+                  <li>
+                     <a href="">Tambah Produk</a>
+                  </li>
+                  <li>
+                     <a href="">Daftar Produk</a>
+                  </li>
+                  <li>
+                     <a href="">Kategori Produk</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-cart-arrow-down fa-snav"></i>Discount</a>
+            </li>
+            
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-user-tag fa-snav"></i>Customer</a>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-clipboard fa-snav"></i>Report</a>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-cog fa-snav"></i>Setting</a>
+            </li> -->
+   
+         </ul>
+   
+         <ul class="list-unstyled components">
+            <li class="mt-2">
+               <a href="#components-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cogs fa-snav"></i> Components</a>
+   
+               <ul class="collapse list-unstyled" id="components-admin">
+                  <li>
+                     <a href="button.html">Button</a>
+                  </li>
+                  <li>
+                     <a href="badge.html">Badge</a>
+                  </li>
+                  <li>
+                     <a href="">Panel custom</a>
+                  </li>
+                  <li>
+                     <a href="icon.html">Icon</a>
+                  </li>
+                  <li>
+                     <a href="">Notification</a>
+                  </li>
+                  <li>
+                     <a href="">Pagination Button</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#table-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-table fa-snav"></i> Table</a>
+   
+               <ul class="collapse list-unstyled" id="table-admin">
+                  <li>
+                     <a href="table.html">Regular Table</a>
+                  </li>
+                  <li>
+                     <a href="">Datatable</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#map-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-map fa-snav"></i> Table</a>
+   
+               <ul class="collapse list-unstyled" id="map-admin">
+                  <li>
+                     <a href="">JVector Maps</a>
+                  </li>
+                  <li>
+                     <a href="">Google Maps</a>
+                  </li>
+               </ul>
+            </li>
+   
+         </ul>
+      </nav>
+   <!-- End Sidebar -->
+   <!-- Content -->
+   
+   <!-- Toggle Sidebar -->
+   <div id="content" class="w-100 p-2">
+      
+      <!-- Navbar Button -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+               <i class="fas fa-align-justify"></i>
+               <span>Toogle Menu</span>
+            </button>
+         </div>
+      </nav>
+
+   
+      <!-- Content -->
+      <!-- Heading -->
+      <div class="container-fluid">
+         <div class="row">
+
+            <div class="col-lg-12 mb-3">
+               <div class="bg-lighter p-3">
+                     <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+                     <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+                     <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                     <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                     <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                     <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+               </div>
+            </div>
+
+            <div class="col-lg-12">
+               <div class="card">
+                  <h5 class="card-header bg-info text-white">Badge Default</h5>
+                  <div class="row bordered no-gutters">
+
+                     <div class="col-xl-4 p-4 border">
+                        <small class="text-muted">Default</small>
+                        <div class="">
+                           <a href="" class="badge badge-light">Light</a>
+                           <a href="" class="badge badge-primary">Primary</a>
+                           <a href="" class="badge badge-success">Success</a>
+                           <a href="" class="badge badge-warning">Warning</a>
+                           <a href="" class="badge badge-info">Info</a>
+                           <a href="" class="badge badge-danger">Danger</a>
+                           <a href="" class="badge badge-dark">Dark</a>
+                        </div>
+                     </div>
+
+                     <div class="col-xl-4 p-4 border">
+                        <small class="text-muted">Default</small>
+                           <div class="demo-button-inline">
+                              <a href="" class="badge badge-light rounded-phill">Light</a>
+                              <a href="" class="badge badge-primary rounded-phill">Primary</a>
+                              <a href="" class="badge badge-success rounded-phill">Success</a>
+                              <a href="" class="badge badge-warning rounded-phill">Warning</a>
+                              <a href="" class="badge badge-info rounded-phill">Info</a>
+                              <a href="" class="badge badge-danger rounded-phill">Danger</a>
+                              <a href="" class="badge badge-dark rounded-phill">Dark</a>
+                           </div>
+                     </div>
+
+                     <div class="col-xl-4 p-4 border">
+                        <small class="text-muted">Default</small>
+                           <div class="demo-button-inline">
+                              <a href="" class="badge badge-outline-light">Light</a>
+                              <a href="" class="badge badge-outline-primary">Primary</a>
+                              <a href="" class="badge badge-outline-success">Success</a>
+                              <a href="" class="badge badge-outline-warning">Warning</a>
+                              <a href="" class="badge badge-outline-info">Info</a>
+                              <a href="" class="badge badge-outline-danger">Danger</a>
+                              <a href="" class="badge badge-outline-dark">Dark</a>
+                           </div>
+                     </div>
+                  </div><!--row no-gutter-->
+               </div><!--card-->
+            </div><!--Col12-->
+
+            <div class="col-lg-12">
+               <div class="row no-gutters">
+                  <div class="card w-100">
+                     <h5 class="card-header bg-info text-white">Button With Badge</h5>
+                     <div class="row bordered no-gutters">
+
+                        <div class="card-body">
+                           <div class="col-lg-12">
+                              <div class="demo-button-inline">
+                                 <button href="" class="btn btn-light">Light<span class="badge">4</span></button>
+                                 <button href="" class="btn btn-primary">Primary<span class="badge">4</span></button>
+                                 <button href="" class="btn btn-secondary">Secondary<span class="badge">4</span></button>
+                                 <button href="" class="btn btn-success">Success<span class="badge">4</span></button>
+                                 <button href="" class="btn btn-warning">Warning<span class="badge">4</span></button>
+                                 <button href="" class="btn btn-info">Info<span class="badge">4</span></button>   
+                                 <button href="" class="btn btn-danger">Danger <span class="badge">4</span></button>
+                                 <button href="" class="btn btn-dark">Danger <span class="badge">4</span></button>          
+                              </div>
+                           </div>
+                        
+                           <div class="col-lg-12">
+                           <div class="demo-button-inline">
+                              <button href="" class="btn btn-outline-light">Light<span class="badge">4</span></button>
+                              <button href="" class="btn btn-outline-primary">Primary<span class="badge">4</span></button>
+                              <button href="" class="btn btn-outline-secondary">Secondary<span class="badge">4</span></button>
+                              <button href="" class="btn btn-outline-success">Success<span class="badge">4</span></button>
+                              <button href="" class="btn btn-outline-warning">Warning<span class="badge">4</span></button>
+                              <button href="" class="btn btn-outline-info">Info<span class="badge">4</span></button>   
+                              <button href="" class="btn btn-outline-danger">Danger <span class="badge">4</span></button>
+                              <button href="" class="btn btn-outline-dark">Danger <span class="badge">4</span></button>          
+                           </div>
+                        </div>
+
+                        </div>
+
+                     </div><!--row-->
+                  </div><!--card-->
+               </div><!--row-->
+            </div><!--Col12-->
+
+         </div> <!--Row-->
+      </div> <!--Container-fluid-->
+
+   
+   </div> <!-- content close -->
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <!-- jQuery Custom Scroller CDN -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+   <!-- Chartjs 2.0 -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+   <script src="assets/js/script-main.js"></script>
+   </body>
+   </html>

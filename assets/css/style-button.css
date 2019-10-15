@@ -1,0 +1,157 @@
+.btn-primary{
+	background-color: #4CC3BF !important;
+	border-color: #4CC3BF !important;
+	color: #FFFFFF;
+}
+
+.btn-primary:hover{
+	background-color: #3FA3A0 !important;
+	border-color: transparent !important;
+}
+
+.btn-outline-primary{
+	background-color: transparent; !important;
+	border-color: #4CC3BF !important;
+	color: #4CC3BF;
+}
+
+.btn-outline-primary:hover{
+	background-color: #3FA3A0 !important;
+	border-color: transparent !important;
+}
+
+.badge-primary{
+	background-color: #4CC3BF !important;
+	border-color: #4CC3BF !important;
+	color: #FFFFFF;
+}
+
+.badge-primary:hover{
+	background-color: #3FA3A0 !important;
+	border-color: transparent !important;
+}
+
+.btn-light{
+	border: 1px solid rgb(131, 131, 131);
+}
+
+.btn-outline-light{
+	border: 1px solid rgb(131, 131, 131);
+	color: rgb(73, 73, 73);
+}
+
+.btn-xl{
+	padding: .875rem 2.125rem;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+}
+
+.btn-xs{
+	padding: 0 .5rem;
+	font-size: .75rem;
+	line-height: 1.5;
+	border-radius: .25rem;	
+}
+
+.btn .badge{
+	background-color: white;
+	color: black;
+	margin-left: .25rem;	
+}
+
+.btn-outline-light span.badge{
+	background-color: #e2e0e0;
+	color: rgb(54, 54, 54);
+	margin-left: .25rem;
+}
+
+.btn-outline-light:hover span.badge{
+	background: #e2e0e0;
+	border-color: transparent;	
+	color: #6c757d;
+}
+
+.btn-outline-primary span.badge{
+	background-color: #007bff;
+	color: rgb(238, 238, 238);
+	margin-left: .25rem;
+}
+
+.btn-outline-primary:hover span.badge{
+	background: rgb(236, 236, 236);
+	border-color: transparent;	
+	color: #007bff;
+}
+
+.btn-outline-secondary span.badge{
+	background-color: #6c757d;
+	color: rgb(238, 238, 238);
+	margin-left: .25rem;
+}
+
+.btn-outline-secondary:hover span.badge{
+	background: rgb(236, 236, 236);
+	border-color: transparent;	
+	color: #6c757d;
+}
+
+.btn-outline-success span.badge{
+	background-color: #28a745;
+	color: rgb(238, 238, 238);
+	margin-left: .25rem;
+}
+
+.btn-outline-success:hover span.badge{
+	background: rgb(236, 236, 236);
+	border-color: transparent;	
+	color: #28a745;
+}
+
+.btn-outline-warning span.badge{
+	background-color: #ffc107;
+	color: rgb(238, 238, 238);
+	margin-left: .25rem;
+}
+
+.btn-outline-warning:hover span.badge{
+	background: rgb(236, 236, 236);
+	border-color: transparent;	
+	color: #ffc107
+}
+
+.btn-outline-info span.badge{
+	background-color: #17a2b8;
+	color: rgb(238, 238, 238);
+	margin-left: .25rem;
+}
+
+.btn-outline-info:hover span.badge{
+	background: rgb(236, 236, 236);
+	border-color: transparent;	
+	color: #17a2b8;
+} 
+
+.btn-outline-danger span.badge{
+	background-color: rgb(168, 44, 44);
+	color: rgb(238, 238, 238);
+	margin-left: .25rem;	
+}
+
+.btn-outline-danger:hover span.badge{
+	background: rgb(236, 236, 236);
+	border-color: transparent;
+	color: rgb(218, 64, 58);
+}
+
+.btn-outline-dark span.badge{
+	background-color: rgb(94, 94, 94);
+	color: rgb(238, 238, 238);
+	margin-left: .25rem;	
+}
+
+.btn-outline-dark:hover span.badge{
+	background: rgb(236, 236, 236);
+	border-color: transparent;
+	color: rgb(94, 94, 94);
+}

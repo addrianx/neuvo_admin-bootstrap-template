@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Common CSS -->
+<link rel="stylesheet" href="assets/css/style-main.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<!-- Chart JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+<!-- JQVectorMap -->
+<link rel="stylesheet" href="assets\jvectormap\jquery-jvectormap-2.0.3.css">
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<!-- JVectorMap  -->
+<script src="assets\jvectormap\jquery-jvectormap-2.0.3.min.js"></script>
+<script src="assets\jvectormap\jquery-jvectormap-map.js"></script>
+<script src="assets\jvectormap\jquery-jvectormap-world-mill-en.js"></script>
+<body>
+
+<!-- Sidebar -->
+<div class="wrapper">
+	
+      <nav id="sidebar" class="mCustomScrollbar">
+         <div class="sidebar-header">
+            <img src="assets/image/data/sidelogo.png" alt="">
+         </div>
+   
+         <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+   
+            <li class="active mt-2">
+               <a class="" href="index.html"><i class="fas fa-home fa-snav"></i>Dashboard</a>
+            </li>
+   
+            <!-- <li class="mt-2">
+               <a href="#artikelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-edit fa-snav"></i><span>Artikel</span></a>
+   
+               <ul class="collapse list-unstyled" id="artikelSubmenu">
+                  <li>
+                     <a href="">Tulis Artikel</a>
+                  </li>
+                  <li>
+                     <a href="">Daftar Artikel</a>
+                  </li>
+                  <li>
+                     <a href="">Kategori Artikel</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#produkSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-shopping-cart fa-snav"></i> Produk</a>
+   
+               <ul class="collapse list-unstyled" id="produkSubmenu">
+                  <li>
+                     <a href="">Tambah Produk</a>
+                  </li>
+                  <li>
+                     <a href="">Daftar Produk</a>
+                  </li>
+                  <li>
+                     <a href="">Kategori Produk</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-cart-arrow-down fa-snav"></i>Discount</a>
+            </li>
+            
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-user-tag fa-snav"></i>Customer</a>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-clipboard fa-snav"></i>Report</a>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-cog fa-snav"></i>Setting</a>
+            </li> -->
+   
+         </ul>
+   
+         <ul class="list-unstyled components">
+            <li class="mt-2">
+               <a href="#components-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cogs fa-snav"></i> Components</a>
+   
+               <ul class="collapse list-unstyled" id="components-admin">
+                  <li>
+                     <a href="button.html">Button</a>
+                  </li>
+                  <li>
+                     <a href="badge.html">Badge</a>
+                  </li>
+                  <li>
+                     <a href="">Panel custom</a>
+                  </li>
+                  <li>
+                     <a href="icon.html">Icon</a>
+                  </li>
+                  <li>
+                     <a href="">Notification</a>
+                  </li>
+                  <li>
+                     <a href="">Pagination Button</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#table-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-table fa-snav"></i> Table</a>
+   
+               <ul class="collapse list-unstyled" id="table-admin">
+                  <li>
+                     <a href="table.html">Regular Table</a>
+                  </li>
+                  <li>
+                     <a href="">Datatable</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#map-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-map fa-snav"></i> Table</a>
+   
+               <ul class="collapse list-unstyled" id="map-admin">
+                  <li>
+                     <a href="">JVector Maps</a>
+                  </li>
+                  <li>
+                     <a href="">Google Maps</a>
+                  </li>
+               </ul>
+            </li>
+   
+         </ul>
+      </nav>
+   <!-- End Sidebar -->
+   <!-- Content -->
+   
+   <!-- Toggle Sidebar -->
+   <div id="content" class="w-100 p-2">
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+               <i class="fas fa-align-justify"></i>
+               <span>Toogle Menu</span>
+            </button>
+         </div>
+      </nav>
+
+      
+      <!-- Embed Web -->
+   
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-12">
+               <div class="card">
+                  <div class="card-header bg-dark-royale text-white">
+                     <h5>Bootstrap 5 Icon</h5>
+                  </div>
+                  <div class="card-body">
+                     <div class="row justify-content-center">
+                      
+                      <div class="col-12">
+                         
+                         <div class="table-responsive">
+                            
+                           <table class="table table-sm table-striped">
+                              <thead>
+                                 <tr>
+                                    <th>Icon</th>
+                                    <th>Class Name</th>
+                                    <th>Unicode</th>
+                                 </tr>
+                              </thead>
+
+                              <tbody>
+
+                                 <tr>
+                                    <td><i class="fab fa-accessible-icon fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fab fa-accessible-icon</td>
+                                    <td>&amp;#xf368;</td>
+                                 </tr>
+                                 
+                                 <tr>  
+                                    <td><i class="fas fa-american-sign-language-interpreting fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-american-sign-language-interpreting</td>
+                                    <td>&amp;#xf2a3;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-assistive-listening-systems fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-assistive-listening-systems</td>
+                                    <td>&amp;#xf2a2;</td>
+                                 </tr>
+
+                                 <tr>  
+                                    <td><i class="fas fa-audio-description fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-audio-description</td>
+                                    <td>&amp;#xf29e;</td>
+                                 </tr> 
+                                 <tr>  
+                                    <td><i class="fas fa-blind fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-blind</td>
+                                    <td>&amp;#xf29d;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-braille fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-braille</td>
+                                    <td>&amp;#xf2a1;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-closed-captioning fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-closed-captioning</td>
+                                    <td>&amp;#xf20a;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="far fa-closed-captioning fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>far fa-closed-captioning</td>
+                                    <td>&amp;#xf20a;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-deaf fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-deaf fs-2rem fa-fh fa-fw</td>
+                                    <td>&amp;#xf2a4;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-low-vision fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-low-vision</td>
+                                    <td>&amp;#xf2a8;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-phone-volume fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-phone-volume</td>
+                                    <td>&amp;#xf2a0;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-question-circle fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-question-circle</td>
+                                    <td>&amp;#xf059;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="far fa-question-circle fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>far fa-question-circle</td>
+                                    <td>&amp;#xf059;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-sign-language fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-sign-language</td>
+                                    <td>&amp;#xf2a7;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-tty fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-tty</td>
+                                    <td>&amp;#xf1e4;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-universal-access fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-universal-access</td>
+                                    <td>&amp;#xf29a;</td>
+                                 </tr>
+
+                              </tbody>
+                           </table>
+
+                         </div>
+
+                      </div>  
+
+                     
+                                  
+
+
+                      <div class="col-12">
+                         <div class="table-responsive-sm">
+                            
+                           <table class="table table-sm table-striped">
+                              <thead>
+                                 <tr>
+                                    <th>Icon</th>
+                                    <th>Class Name</th>
+                                    <th>Unicode</th>
+                                 </tr>
+                              </thead>
+
+                              <tbody>
+
+                                 <tr>
+                                    <td><i class="fab fa-accessible-icon fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fab fa-accessible-icon</td>
+                                    <td>&amp;#xf368;</td>
+                                 </tr>
+                                 
+                                 <tr>  
+                                    <td><i class="fas fa-american-sign-language-interpreting fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-american-sign-language-interpreting</td>
+                                    <td>&amp;#xf2a3;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-assistive-listening-systems fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-assistive-listening-systems</td>
+                                    <td>&amp;#xf2a2;</td>
+                                 </tr>
+
+                                 <tr>  
+                                    <td><i class="fas fa-audio-description fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-audio-description</td>
+                                    <td>&amp;#xf29e;</td>
+                                 </tr> 
+                                 <tr>  
+                                    <td><i class="fas fa-blind fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-blind</td>
+                                    <td>&amp;#xf29d;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-braille fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-braille</td>
+                                    <td>&amp;#xf2a1;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-closed-captioning fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-closed-captioning</td>
+                                    <td>&amp;#xf20a;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="far fa-closed-captioning fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>far fa-closed-captioning</td>
+                                    <td>&amp;#xf20a;</td>
+                                 </tr> 
+
+                                 <tr>  
+                                    <td><i class="fas fa-deaf fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-deaf fs-2rem fa-fh fa-fw</td>
+                                    <td>&amp;#xf2a4;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-low-vision fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-low-vision</td>
+                                    <td>&amp;#xf2a8;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-phone-volume fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-phone-volume</td>
+                                    <td>&amp;#xf2a0;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-question-circle fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-question-circle</td>
+                                    <td>&amp;#xf059;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="far fa-question-circle fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>far fa-question-circle</td>
+                                    <td>&amp;#xf059;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-sign-language fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-sign-language</td>
+                                    <td>&amp;#xf2a7;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-tty fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-tty</td>
+                                    <td>&amp;#xf1e4;</td>
+                                 </tr>
+
+                                 <tr>
+                                    <td><i class="fas fa-universal-access fs-2rem fa-fh fa-fw"></i></td>
+                                    <td>fas fa-universal-access</td>
+                                    <td>&amp;#xf29a;</td>
+                                 </tr>
+
+                              </tbody>
+                           </table>
+
+                         </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+                                   <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <i class="fas fa-cat fs-2rem fa-fh fa-fw"></i>
+                                       <span class="d-block text-muted fs-_7rem">fa-accessible-icon</span>
+                                    </div>
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <i class="fas fa-crow fs-2rem fa-fh fa-fw"></i>
+                                       <span class="d-block text-muted fs-_7rem">fa-american-sign-language-interpreting</span>
+                                    </div>
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-dog fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem"> fa-assistive-listening-systems</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-dove fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-audio-description</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-dragon fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-blind</span>
+                                    </div>
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-feather fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-braille</span>
+                                    </div>
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="  fas fa-feather-alt fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-closed-captioning</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-fish fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-closed-captioning</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-frog fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-deaf</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-hippo fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-low-vision</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-horse fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-phone-volume</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-kiwi-bird fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-kiwi-bird</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-otter fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-otter</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-sign-language fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-sign-language</span>
+                                    </div>                         
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <p class="fas fa-paw fs-2rem fa-fh fa-fw"></p>
+                                       <span class="d-block text-muted fs-_7rem">fa-paw</span>
+                                    </div> 
+                                    <div class="col-6 col-lg-4 col-xl-2 bg-light p-2 m-2">
+                                       <i class="fas fa-spider fs-2rem fa-fh fa-fw"></i>
+                                       <span class="d-block text-muted fs-_7rem">fa-spider</span>
+                                    </div>
+
+                                   
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div> <!-- accordoin -->
+                     </div> <!-- col-12 -->                
+                         
+
+                     </div>     
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+
+
+   
+
+
+</div> <!-- content clos -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Chartjs 2.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<script src="assets/js/script-main.js"></script>
+</body>
+</html>

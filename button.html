@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+   <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<title>Nevo Admin | Button</title>
+</head>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Common CSS -->
+<link rel="stylesheet" href="assets/css/style-main.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<!-- Chart JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+<!-- JQVectorMap -->
+<link rel="stylesheet" href="assets\jvectormap\jquery-jvectormap-2.0.3.css">
+<!-- Prism -->
+<link rel="stylesheet" href="assets/vendor/prismjs/prism.css">
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<!-- JVectorMap  -->
+<script src="assets\jvectormap\jquery-jvectormap-2.0.3.min.js"></script>
+<script src="assets\jvectormap\jquery-jvectormap-map.js"></script>
+<script src="assets\jvectormap\jquery-jvectormap-world-mill-en.js"></script>
+<body>
+
+<!-- Sidebar -->
+<div class="wrapper">
+	
+      <nav id="sidebar" class="mCustomScrollbar">
+         <div class="sidebar-header">
+            <img src="assets/image/data/sidelogo.png" alt="">
+         </div>
+   
+         <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+   
+            <li class="active mt-2">
+               <a class="bg-socialive" href="index.html"><i class="fas fa-home fa-snav"></i>Dashboard</a>
+            </li>
+   
+            <!-- <li class="mt-2">
+               <a href="#artikelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-edit fa-snav"></i><span>Artikel</span></a>
+   
+               <ul class="collapse list-unstyled" id="artikelSubmenu">
+                  <li>
+                     <a href="">Tulis Artikel</a>
+                  </li>
+                  <li>
+                     <a href="">Daftar Artikel</a>
+                  </li>
+                  <li>
+                     <a href="">Kategori Artikel</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#produkSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-shopping-cart fa-snav"></i> Produk</a>
+   
+               <ul class="collapse list-unstyled" id="produkSubmenu">
+                  <li>
+                     <a href="">Tambah Produk</a>
+                  </li>
+                  <li>
+                     <a href="">Daftar Produk</a>
+                  </li>
+                  <li>
+                     <a href="">Kategori Produk</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-cart-arrow-down fa-snav"></i>Discount</a>
+            </li>
+            
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-user-tag fa-snav"></i>Customer</a>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-clipboard fa-snav"></i>Report</a>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#"><i class="fas fa-cog fa-snav"></i>Setting</a>
+            </li> -->
+   
+         </ul>
+   
+         <ul class="list-unstyled components">
+            <li class="mt-2">
+               <a href="#components-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cogs fa-snav"></i> Components</a>
+   
+               <ul class="collapse list-unstyled" id="components-admin">
+                  <li>
+                     <a href="button.html">Button</a>
+                  </li>
+                  <li>
+                     <a href="badge.html">Badge</a>
+                  </li>
+                  <li>
+                     <a href="">Panel custom</a>
+                  </li>
+                  <li>
+                     <a href="icon.html">Icon</a>
+                  </li>
+                  <li>
+                     <a href="">Notification</a>
+                  </li>
+                  <li>
+                     <a href="">Pagination Button</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#table-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-table fa-snav"></i> Table</a>
+   
+               <ul class="collapse list-unstyled" id="table-admin">
+                  <li>
+                     <a href="table.html">Regular Table</a>
+                  </li>
+                  <li>
+                     <a href="">Datatable</a>
+                  </li>
+               </ul>
+            </li>
+   
+            <li class="mt-2">
+               <a href="#map-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-map fa-snav"></i> Table</a>
+   
+               <ul class="collapse list-unstyled" id="map-admin">
+                  <li>
+                     <a href="">JVector Maps</a>
+                  </li>
+                  <li>
+                     <a href="">Google Maps</a>
+                  </li>
+               </ul>
+            </li>
+   
+         </ul>
+      </nav>
+   <!-- End Sidebar -->
+   <!-- Content -->
+   
+   <!-- Toggle Sidebar -->
+   <div id="content" class="w-100 p-2">
+      
+      <!-- Navbar Button -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+               <i class="fas fa-align-justify"></i>
+               <span>Toogle Menu</span>
+            </button>
+         </div>
+      </nav>
+
+      
+      <!-- Embed Web -->
+      <!-- Button Normal  -->
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-12">
+
+               <div class="card mb-4">
+                  <div class="card-header bg-info text-white ">
+                     <h5 class="m-0">Normal Button</h5>
+                  </div>
+
+                  <div class="card-body">
+                  <div class="row no-gutters">
+                  
+                  <div class="col-12 nav-col">
+                     <nav>
+                       <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Element</a>
+                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-profile" aria-selected="false">Code</a>
+                     </nav>
+
+                     <div class="tab-content" id="nav-tabContent">
+
+                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="row no-gutters">
+                           <div class="col-xl-6 p-4 border">
+                              <small class="text-success">Default</small>
+                                 <div class="demo-button-inline">
+                                    <button class="btn btn-light" type="button">Light</button>
+                                    <button class="btn btn-primary" type="button">Primary</button>
+                                    <button class="btn btn-secondary" type="button">Secondary</button>
+                                    <button class="btn btn-warning" type="button">Warning</button>
+                                    <button class="btn btn-info" type="button">Info</button>
+                                    <button class="btn btn-danger" type="button">Danger</button>
+                                    <button class="btn btn-dark" type="button">Dark</button>
+                                    <button class="btn btn-link" type="button">Link</button>
+                                 </div>
+                           </div>
+
+                           <div class="col-xl-6 p-4 border">
+                              <small class="text-success">Rounded</small>
+                                 <div class="demo-button-inline">
+                                    <button class="btn btn-light rounded-phill" type="button">Light</button>
+                                    <button class="btn btn-primary rounded-phill" type="button">Primary</button>
+                                    <button class="btn btn-secondary rounded-phill" type="button">Secondary</button>
+                                    <button class="btn btn-warning rounded-phill" type="button">Warning</button>
+                                    <button class="btn btn-info rounded-phill" type="button">Info</button>
+                                    <button class="btn btn-danger rounded-phill" type="button">Danger</button>
+                                    <button class="btn btn-dark rounded-phill" type="button">Dark</button>
+                                    <button class="btn btn-link rounded-phill" type="button">Link</button>
+                                 </div>
+                           </div>
+
+                           <div class="col-xl-6 p-4 border">
+                              <small class="text-success">Btn Outline Default</small>
+                                 <div class="demo-button-inline">
+                                    <button class="btn btn-outline-light" type="button">Light</button>
+                                    <button class="btn btn-outline-primary" type="button">Primary</button>
+                                    <button class="btn btn-outline-secondary" type="button">Secondary</button>
+                                    <button class="btn btn-outline-warning" type="button">Warning</button>
+                                    <button class="btn btn-outline-info" type="button">Info</button>
+                                    <button class="btn btn-outline-danger" type="button">Danger</button>
+                                    <button class="btn btn-outline-dark" type="button">Dark</button>
+                                    <button class="btn btn-outline-link" type="button">Link</button>
+                                 </div>                        
+                           </div>
+
+                           <div class="col-xl-6 p-4 border">
+                              <small class="text-success">Outline Rounded</small>
+                                 <div class="demo-button-inline">
+                                    <button class="btn btn-outline-light rounded-phill" type="button">Light</button>
+                                    <button class="btn btn-outline-primary rounded-phill" type="button">Primary</button>
+                                    <button class="btn btn-outline-secondary rounded-phill" type="button">Secondary</button>
+                                    <button class="btn btn-outline-warning rounded-phill" type="button">Warning</button>
+                                    <button class="btn btn-outline-info rounded-phill" type="button">Info</button>
+                                    <button class="btn btn-outline-danger rounded-phill" type="button">Danger</button>
+                                    <button class="btn btn-outline-dark rounded-phill" type="button">Dark</button>
+                                    <button class="btn btn-outline-link rounded-phill" type="button">Link</button>
+                                 </div>
+                           </div>
+                        </div> <!-- row -->
+                     </div> <!-- tab-fade-element -->
+
+
+                     <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="row">
+
+                           <div class="col-12">
+                              <div class="code-container">
+                                 <iframe width="100%" height="300" src="http://jsfiddle.net/adinugraha1994/03j2Lr8h/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                              </div> <!-- code-container -->
+                           </div> <!-- col -->
+
+                        </div> <!-- row -->
+                     </div> <!-- tab-pane -->
+
+
+                     </div> <!-- tab-content -->
+                  </div> <!-- div nav-col -->
+
+
+
+                  </div> <!-- row -->
+                </div> <!-- card-body -->
+               </div> <!-- card -->
+            </div> <!-- col-lg-12 -->
+
+            <div class="col-lg-12">
+               <div class="card mb-4">                     
+                  <div class="card-header bg-info text-white ">
+                     <h5 class="m-0">Button Size</h5>
+                  </div>
+                  <div class="row no-gutters">
+                     
+                     <div class="col-12 p-4">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                          <li class="nav-item">
+                            <a class="nav-link active" id="element-tab-2" data-toggle="tab" href="#element2" role="tab" aria-controls="element2" aria-selected="true">Element</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" id="code-tab-2" data-toggle="tab" href="#code2" role="tab" aria-controls="code2" aria-selected="false">Code</a>
+                          </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                        <!-- 
+                           
+                           Tab Pane 1
+                         -->
+                        <div class="tab-pane fade show active" id="element2" role="tabpanel" aria-labelledby="home-tab">
+                              
+                        <div class="card-body">
+                           <!-- Xtra Large Icon -->
+                           <div class="card-body border-bottom">
+                              <div class="col-lg-12 pl-4">
+                                 <small class="text-success">Normal Extra Large</small>
+                                    <div class="demo-button-inline">
+                                       <button class="btn btn-light btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-primary btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-secondary btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-warning btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-info btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-danger btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-dark btn-xl" type="button">Button XL</button>
+                                    </div>
+                              </div>
+                           </div>
+
+                           <div class="card-body border-bottom">
+                              <div class="col-lg-12 pl-4">
+                                    <small class="text-success">Outline Extra Large</small>
+                                    <div class="demo-button-inline">
+                                       <button class="btn btn-outline-light btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-primary btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-secondary btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-warning btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-info btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-danger btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-dark btn-xl" type="button">Button XL</button>
+                                    </div>
+                              </div>
+                           </div>
+
+                           <div class="card-body border-bottom">
+                              <div class="col-lg-12 pl-4">
+                                    <small class="text-success">Rounded Extra Large</small>
+                                    <div class="demo-button-inline">
+                                       <button class="btn btn-light rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-primary rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-secondary rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-warning rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-info rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-danger rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-dark rounded-phill btn-xl" type="button">Button XL</button>
+                                    </div>
+                              </div>
+                           </div>
+
+                           <div class="card-body border-bottom">
+                              <div class="col-lg-12 pl-4">
+                                    <small class="text-success">Rounded Outline Extra Large</small>
+                                    <div class="demo-button-inline">
+                                       <button class="btn btn-outline-light rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-primary rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-secondary rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-warning rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-info rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-danger rounded-phill btn-xl" type="button">Button XL</button>
+                                       <button class="btn btn-outline-dark rounded-phill btn-xl" type="button">Button XL</button>
+                                    </div>
+                              </div>
+                           </div>
+
+
+                           <!-- Large Button -->
+                           <div class="card-body border-bottom">
+                              <div class="col-lg-12 pl-4">
+                                    <small class="text-success">Button Large & outline</small>
+                                    <div class="demo-button-inline">
+                                          <button class="btn btn-light btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-primary btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-secondary btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-warning btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-info btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-danger btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-dark btn-lg" type="button">Button L</button>
+                                    </div>
+                              </div>
+                           
+
+                              <div class="col-lg-12 pl-4">
+                                    <div class="demo-button-inline">
+                                          <button class="btn btn-outline-light btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-outline-primary btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-outline-secondary btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-outline-warning btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-outline-info btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-outline-danger btn-lg" type="button">Button L</button>
+                                          <button class="btn btn-outline-dark btn-lg" type="button">Button L</button>
+                                    </div>
+                              </div>
+                           </div>
+
+                           <div class="card-body border-bottom">
+                              <div class="col-lg-12 pl-4">
+                                 <small class="text-success">Normal small & outline</small>
+                                 <div class="demo-button-inline">
+                                       <button class="btn btn-light btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-primary btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-secondary btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-warning btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-info btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-danger btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-dark btn-sm" type="button">Button SM</button>
+                                 </div>
+                              </div>                           
+
+                              <div class="col-lg-12 pl-4">
+                                 <div class="demo-button-inline">
+                                       <button class="btn btn-outline-light btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-outline-primary btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-outline-secondary btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-outline-warning btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-outline-info btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-outline-danger btn-sm" type="button">Button SM</button>
+                                       <button class="btn btn-outline-dark btn-sm" type="button">Button SM</button>
+                                 </div>
+                           </div> 
+                        </div> <!-- card-body-->
+
+                        <div class="card-body border-bottom">
+                           <div class="col-lg-12 pl-4">
+                                 <small class="text-success">Button Extra Small & outline</small>
+                                 <div class="demo-button-inline">
+                                       <button class="btn btn-light btn-xs" type="button">Button XS</button>
+                                       <button class="btn btn-primary btn-xs" type="button">Button XS</button>
+                                       <button class="btn btn-secondary btn-xs" type="button">Button XS</button>
+                                       <button class="btn btn-warning btn-xs" type="button">Button XS</button>
+                                       <button class="btn btn-info btn-xs" type="button">Button XS</button>
+                                       <button class="btn btn-danger btn-xs" type="button">Button XS</button>
+                                       <button class="btn btn-dark btn-xs" type="button">Button XS</button>
+                                 </div>
+                           </div>
+
+                           <div class="col-lg-12 pl-4">
+                              <div class="demo-button-inline">
+                                    <button class="btn btn-outline-light btn-xs" type="button">Button XS</button>
+                                    <button class="btn btn-outline-primary btn-xs" type="button">Button XS</button>
+                                    <button class="btn btn-outline-secondary btn-xs" type="button">Button XS</button>
+                                    <button class="btn btn-outline-warning btn-xs" type="button">Button XS</button>
+                                    <button class="btn btn-outline-info btn-xs" type="button">Button XS</button>
+                                    <button class="btn btn-outline-danger btn-xs" type="button">Button XS</button>
+                                    <button class="btn btn-outline-dark btn-xs" type="button">Button XS</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                        
+
+                        <!-- Tab Pane 2 -->
+                          <div class="tab-pane fade" id="code2" role="tabpanel" aria-labelledby="profile-tab"> 
+                              <div class="card-body">
+                                 <div class="code-container">
+                                    <iframe width="100%" height="300" src="http://jsfiddle.net/adinugraha1994/dnc1oaqg/1/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                                 </div> <!-- code-container -->                                 
+                              </div>
+                          </div>
+                     
+                     </div>  
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+            <div class="col-lg-12">
+               <div class="card">
+                  <div class="card-header bg-info text-white">
+                     <h5 class="m-0">Button Icon</h5>
+                  </div>
+                  <div class="row no-gutters">
+                     
+                     <div class="col-12 p-4">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                          <li class="nav-item">
+                            <a class="nav-link active" id="element-tab-3" data-toggle="tab" href="#element3" role="tab" aria-controls="element3" aria-selected="true">Element</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" id="code-tab-3" data-toggle="tab" href="#code3" role="tab" aria-controls="code3" aria-selected="false">Code</a>
+                          </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                        <!-- 
+                           
+                           Tab Pane 1
+                         -->
+                     <div class="tab-pane fade show active" id="element3" role="tabpanel" aria-labelledby="home-tab">
+
+                     <div class="card-body">
+                        <div class="col-lg-12 pl-4">
+                           <small class="text-success">Button Icon</small>
+                           <div class="demo-button-inline">
+                              <button class="btn btn-light"><i class="fas fa-paper-plane"></i> Light</button>
+                              <button class="btn btn-primary"><i class="fas fa-arrow-alt-circle-down"></i> Primary</button>
+                              <button class="btn btn-secondary"><i class="fas fa-file-export"></i> Secondary</button>
+                              <button class="btn btn-warning"><i class="fas fa-exclamation-triangle"></i> Warning</button>
+                              <button class="btn btn-info"><i class="fas fa-info-circle"></i> Info</button>
+                              <button class="btn btn-danger"><i class="fas fa-skull-crossbones"></i> Danger</button>
+                              <button class="btn btn-dark"><i class="fas fa-moon"></i> Dark</button>
+                           </div>
+                        </div>
+
+                        <div class="col-lg-12 pl-4">
+                              <div class="demo-button-inline">
+                                 <button class="btn btn-outline-light"><i class="fas fa-paper-plane"></i> Light</button>
+                                 <button class="btn btn-outline-primary"><i class="fas fa-arrow-alt-circle-down"></i> Primary</button>
+                                 <button class="btn btn-outline-secondary"><i class="fas fa-file-export"></i> Secondary</button>
+                                 <button class="btn btn-outline-warning"><i class="fas fa-exclamation-triangle"></i> Warning</button>
+                                 <button class="btn btn-outline-info"><i class="fas fa-info-circle"></i> Info</button>
+                                 <button class="btn btn-outline-danger"><i class="fas fa-skull-crossbones"></i> Danger</button>
+                                 <button class="btn btn-outline-dark"><i class="fas fa-moon"></i> Dark</button>
+                              </div>
+                        </div>
+                     </div>
+                  </div> <!-- col-12 --> 
+                  <div class="tab-pane fade" id="code3" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="col-12">
+                           <iframe width="100%" height="300" src="http://jsfiddle.net/adinugraha1994/c2fLeyxj/2/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        </div>  <!-- tab-pane -->                
+                     </div> <!-- col-12 -->
+                  </div> <!-- tab-pane -->
+                  
+                    
+                  </div> <!-- tab content -->
+
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-12">
+                  <div class="card">
+                     <div class="card-header bg-info text-white">
+                        <h5 class="m-0">Button Icon</h5>
+                     </div>
+                     <div class="row no-gutters">
+                        <div class="card-body">
+                           <div class="col-lg-12 pl-4">
+                           <small class="text-success">Button Icon Only</small>
+                           <div class="demo-button-inline">
+                              <button class="btn btn-light btn-xl"><i class="fas fa-paper-plane"></i></button>
+                              <button class="btn btn-primary btn-xl"><i class="fas fa-arrow-alt-circle-down"></i></button>
+                              <button class="btn btn-secondary btn-xl"><i class="fas fa-file-export"></i></button>
+                              <button class="btn btn-warning btn-xl"><i class="fas fa-exclamation-triangle"></i></button>
+                              <button class="btn btn-info btn-xl"><i class="fas fa-info-circle"></i></button>
+                              <button class="btn btn-danger btn-xl"><i class="fas fa-skull-crossbones"></i></button>
+                              <button class="btn btn-dark btn-xl"><i class="fas fa-moon"></i></button>
+                           </div>
+                        </div>
+   
+                        <div class="col-lg-12 pl-4">
+                              <div class="demo-button-inline">
+                                 <button class="btn btn-outline-light btn-xl"><i class="fas fa-paper-plane"></i></button>
+                                 <button class="btn btn-outline-primary btn-xl"><i class="fas fa-arrow-alt-circle-down"></i></button>
+                                 <button class="btn btn-outline-secondary btn-xl"><i class="fas fa-file-export"></i></button>
+                                 <button class="btn btn-outline-warning btn-xl"><i class="fas fa-exclamation-triangle"></i></button>
+                                 <button class="btn btn-outline-info btn-xl"><i class="fas fa-info-circle"></i></button>
+                                 <button class="btn btn-outline-danger btn-xl"><i class="fas fa-skull-crossbones"></i></button>
+                                 <button class="btn btn-outline-dark btn-xl"><i class="fas fa-moon"></i></button>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-12 pl-4">
+                              <div class="demo-button-inline">
+                                 <button class="btn btn-outline-light btn-lg"><i class="fas fa-paper-plane"></i></button>
+                                 <button class="btn btn-outline-primary btn-lg"><i class="fas fa-arrow-alt-circle-down"></i></button>
+                                 <button class="btn btn-outline-secondary btn-lg"><i class="fas fa-file-export"></i></button>
+                                 <button class="btn btn-outline-warning btn-lg"><i class="fas fa-exclamation-triangle"></i></button>
+                                 <button class="btn btn-outline-info btn-lg"><i class="fas fa-info-circle"></i></button>
+                                 <button class="btn btn-outline-danger btn-lg"><i class="fas fa-skull-crossbones"></i></button>
+                                 <button class="btn btn-outline-dark btn-lg"><i class="fas fa-moon"></i></button>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-12 pl-4">
+                              <div class="demo-button-inline">
+                                 <button class="btn btn-outline-light btn-sm"><i class="fas fa-paper-plane"></i></button>
+                                 <button class="btn btn-outline-primary btn-sm"><i class="fas fa-arrow-alt-circle-down"></i></button>
+                                 <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-file-export"></i></button>
+                                 <button class="btn btn-outline-warning btn-sm"><i class="fas fa-exclamation-triangle"></i></button>
+                                 <button class="btn btn-outline-info btn-sm"><i class="fas fa-info-circle"></i></button>
+                                 <button class="btn btn-outline-danger btn-sm"><i class="fas fa-skull-crossbones"></i></button>
+                                 <button class="btn btn-outline-dark btn-sm"><i class="fas fa-moon"></i></button>
+                              </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+
+         </div>
+      </div>
+
+
+   
+
+
+</div> <!-- content clos -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Chartjs 2.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<!-- Prism -->
+<script src="assets/vendor/prismjs/prism.js"></script>
+<script src="assets/js/script-main.js"></script>
+</body>
+</html>

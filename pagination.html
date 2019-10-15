@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<link rel="stylesheet" href="assets\vendor\bootstrap 4.3.1\css\bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style-main.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="assets/vendor/mscrollbar/jquery.mCustomScrollbar.min.css">
+<!-- Font Awesome CSS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+<!-- Chart JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
+<!-- JQVectorMap -->
+<link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.3.css">
+<!-- Prism -->
+<link rel="stylesheet" href="assets/vendor/prismjs/prism.css">
+
+<!-- Jquery -->
+<script src="assets\vendor\jquery\jquery-2.2.4.js"></script>
+<!-- JVectorMap  -->
+<script src="assets\vendor\jvectormap\jquery-jvectormap-2.0.3.min.js"></script>
+<script src="assets\vendor\jvectormap\jquery-jvectormap-map.js"></script>
+<script src="assets\vendor\jvectormap\jquery-jvectormap-world-mill-en.js"></script>
+
+<!-- Ace Code editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/theme-monokai.js"></script>
+<body>
+
+<div class="wrapper">
+	
+	<nav id="sidebar" class="mCustomScrollbar">
+		<div class="sidebar-header">
+			<img src="assets/image/data/sidelogo.png" alt="">
+		</div>
+
+		<ul class="list-unstyled components">
+			<p>Dummy Heading</p>
+
+			<li class="active mt-2">
+				<a class="" href="index.html"><i class="fas fa-home fa-snav"></i>Dashboard</a>
+			</li>
+
+			<!-- <li class="mt-2">
+				<a href="#artikelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-edit fa-snav"></i><span>Artikel</span></a>
+
+				<ul class="collapse list-unstyled" id="artikelSubmenu">
+					<li>
+						<a href="">Tulis Artikel</a>
+					</li>
+					<li>
+						<a href="">Daftar Artikel</a>
+					</li>
+					<li>
+						<a href="">Kategori Artikel</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#produkSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-shopping-cart fa-snav"></i> Produk</a>
+
+				<ul class="collapse list-unstyled" id="produkSubmenu">
+					<li>
+						<a href="">Tambah Produk</a>
+					</li>
+					<li>
+						<a href="">Daftar Produk</a>
+					</li>
+					<li>
+						<a href="">Kategori Produk</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-cart-arrow-down fa-snav"></i>Discount</a>
+			</li>
+			
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-user-tag fa-snav"></i>Customer</a>
+			</li>
+
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-clipboard fa-snav"></i>Report</a>
+			</li>
+
+			<li class="mt-2">
+				<a href="#"><i class="fas fa-cog fa-snav"></i>Setting</a>
+			</li> -->
+
+		</ul>
+
+		<ul class="list-unstyled components">
+			<li class="mt-2">
+				<a href="#components-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cogs fa-snav"></i> Components</a>
+
+				<ul class="collapse list-unstyled" id="components-admin">
+					<li>
+						<a href="button.html">Button</a>
+					</li>
+					<li>
+						<a href="badge.html">Badge</a>
+					</li>
+					<li>
+						<a href="">Panel custom</a>
+					</li>
+					<li>
+						<a href="icon.html">Icon</a>
+					</li>
+					<li>
+						<a href="">Notification</a>
+					</li>
+					<li>
+						<a href="">Pagination Button</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#table-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-table fa-snav"></i> Table</a>
+
+				<ul class="collapse list-unstyled" id="table-admin">
+					<li>
+						<a href="table.html">Regular Table</a>
+					</li>
+					<li>
+						<a href="">Datatable</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="mt-2">
+				<a href="#map-admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-map fa-snav"></i> Table</a>
+
+				<ul class="collapse list-unstyled" id="map-admin">
+					<li>
+						<a href="">JVector Maps</a>
+					</li>
+					<li>
+						<a href="">Google Maps</a>
+					</li>
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+
+
+<!-- Content -->
+<div id="content" class="w-100 p-2">
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+
+			<button type="button" id="sidebarCollapse" class="btn btn-info">
+				<i class="fas fa-align-left"></i>
+				<span>Toogle Sidebar</span>
+			</button>
+			
+		</div>
+	</nav>
+
+
+<div class="container-fluid">
+	<div class="row bg-light p-4">
+
+			<div class="col-12 col-xl-6">
+
+				<h4>Pagination Large</h4>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Element</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Code</a>
+					</li>
+				</ul>
+
+				<div class="tab-content p-2 justify" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="container-fluid">
+		
+							<nav aria-label="Page navigation example">
+								<ul class="pagination justify-content-center">
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item"><a class="page-link" href="#">5</a></li>
+									<li class="page-item"><a class="page-link" href="#">6</a></li>
+										<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+										</a>
+										</li>
+									</ul>
+							</nav>
+						</div>
+					</div>
+
+					<div class="tab-pane fade p-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div id="ace-editor">
+							<iframe width="100%" height="300" src="http://jsfiddle.net/adinugraha1994/q45zhg0u/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+						</div>
+					</div>
+
+				</div> <!-- tab-content -->
+		</div> <!--col-->
+
+
+		<div class="col-12 col-xl-6">
+	
+				<h4>Pagination Small</h4>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home-small" role="tab" aria-controls="home" aria-selected="true">Element</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile-small" role="tab" aria-controls="profile" aria-selected="false">Code</a>
+					</li>
+				</ul>
+		
+				<div class="tab-content p-2 justify" id="myTabContent">
+					<div class="tab-pane fade show active" id="home-small" role="tabpanel" aria-labelledby="home-tab">
+						<div class="container-fluid">
+		
+							<nav aria-label="Page navigation example">
+								<ul class="pagination pagination-sm justify-content-center">
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item"><a class="page-link" href="#">5</a></li>
+									<li class="page-item"><a class="page-link" href="#">6</a></li>
+										<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+										</a>
+										</li>
+									</ul>
+							</nav>
+						</div>
+					</div>
+		
+					<div class="tab-pane fade p-2" id="profile-small" role="tabpanel" aria-labelledby="profile-tab">
+						<div id="ace-editor">
+							<iframe width="100%" height="300" src="http://jsfiddle.net/adinugraha1994/rhy2nvs1/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+						</div>
+					</div>
+
+				</div> <!-- tab-content -->
+
+		</div> <!--row-->
+	</div> <!--container-->
+
+
+
+
+</div> <!-- content clos -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Chartjs 2.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+<!-- Prism -->
+<script src="assets/vendor/prismjs/prism.js"></script>
+<script src="assets/js/script-main.js"></script>
+
+ 
+
+
+</body>
+</html>

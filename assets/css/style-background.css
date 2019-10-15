@@ -1,0 +1,89 @@
+
+
+/*
+//
+	Static Gradient Background
+//
+*/
+.bg-green-gradient{
+	background: linear-gradient(45deg, rgba(68,194,143,1) 0%, rgba(99,207,167,1) 59%, rgba(170,227,185,1) 100%) !important;
+}
+
+.bg-lightblue-gradient{
+	background: linear-gradient(45deg, rgba(45,121,196,1) 0%, rgba(69,146,214,1) 51%, rgba(119,173,224,1) 100%) !important;
+}
+
+.bg-red-gradient{
+	background: linear-gradient(45deg, rgba(207,60,80,1) 0%, rgba(199,73,88,1) 31%, rgba(209,86,100,1) 64%, rgba(204,114,126,1) 100%) !important;
+}
+
+.bg-lawrencyum{
+	background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0f0c29, #302b63, #24243e) !important; /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #0f0c29, #302b63, #24243e) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-orange{
+	background: #fc4a1a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a) !important;  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #f7b733, #fc4a1a) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-socialive{
+	background: #06beb6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #48b1bf, #06beb6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #48b1bf, #06beb6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-dark-royale{
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-stellar{
+	background: #7474BF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*
+//
+	Animate Gradient Background
+//
+*/
+
+.bg-purple-dark{
+	background: #512da8 !important;
+	border-color: transparent ;
+	color: #fff;
+}
+
+.bg-purple-dark:hover{
+	background: #140078 !important;
+	border-color: transparent ;
+	color: #fff;
+}
+
+
+.bg-pink{
+	background: #d81b60 !important;
+	color: #fff;
+	border-color: transparent !important; 
+}
+
+.bg-pink:hover{
+	background: #a00037 !important;
+	color: #fff;
+	border-color: transparent !important;
+}
+
+.bg-grey{
+	background: #f6f8fa !important;
+}
+
+.bg-lighter{
+	background-color: rgba(29, 24, 24, 0.11);
+}
+
